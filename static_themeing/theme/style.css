@@ -1,0 +1,80 @@
+body {
+  padding-top: 100px;
+}
+
+a {
+	color: #224570;
+}
+
+a:hover {	
+	color: #426590;
+}
+
+a:active {
+	color: #92b5e0;
+	text-decoration: underline;
+}
+
+#logoImg {
+	height: 100px;
+}
+
+body {
+	background: url('graph_pattern.svg');
+	background-color: #eeeeee;
+	background-size: cover;
+}
+
+#header, :not(#header) > .container {
+	background-color: white;
+	border: none;
+	box-shadow: 1px 1px 2px rgba(19,19,42,0.2);
+}
+
+:not(#header) > .container {
+	padding: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+@media only screen and (min-width : 768px) {
+	#navbar li a {
+		line-height: calc(75px - 0.5em);
+	    height: 100px;
+	}
+}
+
+#header .nav li a {
+	color: #13132a;
+	font-weight: bold;
+}
+
+#header .nav li.active a {
+	background-color: #eeeeee;
+}
+#header .nav li a:hover {
+	background-color: #b9dcf7;
+}
+
+.navbar-toggle .icon-bar {
+	height: 3px;
+	background-color: #13132a;
+}
+
+.navbar-toggle:not(.collapsed) {
+	background-color: #92b5e0;
+}
+
+#pageFooter > .container {
+	background-color: #eeeeee;
+	background-color: rgba(238, 238, 238, 0.75);
+}
+
+#pageFooter span {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#pageFooter span:not(:last-child) {
+	margin-right: 40px;
+}
