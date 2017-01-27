@@ -1,0 +1,19 @@
+{
+  "name": "uon-compsoc-site",
+  "version": "0.0.0",
+  "description": "UoN Computing Society Website",
+  "main": "main.js",
+  "scripts": {
+    "test": "test-a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uon-compsoc/website.git"
+  },
+  "author": "UoN Computing Society",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/uon-compsoc/website/issues"
+  },
+  "homepage": "https://github.com/uon-compsoc/website#readme"
+}
