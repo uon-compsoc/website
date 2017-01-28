@@ -2,7 +2,7 @@
 website.iml
 bin
 out
-dst
+dist
 
 # Logs
 logs
