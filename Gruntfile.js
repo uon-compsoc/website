@@ -1,14 +1,21 @@
 module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt);
   grunt.initConfig({
-    "babel": {
+    babel: {
       options: {
         sourceMap: true
       },
       dist: {
         files: {
-          "dist/hello-world-testing/main.js": "src/hello-world-testing/main.js",
+          src: "src/controllers/**/*",
+          dest: "dist/"
         }
+      }
+    },
+    copy: {
+      files: {
+        src: "src/(public|views|data)/**/*",
+        dest: "dist/"
       }
     }
   });
