@@ -7,7 +7,7 @@ app.get('/', function (req, res) {
 	fs.readFile('/views/static_themeing/index.html',
 		function(err, data) {
 			if (err) {
-				throw err;
+				throw "hi";
 			} else {
 				res.send(data);
 			}

@@ -17,14 +17,17 @@ module.exports = function(grunt) {
       }
     },
     copy: {
-      files: {
-        expand: true,
-        cwd: 'src/',
-        src: "(public|views|data)/",
-        dest: "dist/"
+      main: {
+        files: [{
+          expand: true,
+          cwd: 'src/',
+          src: ['public/*/**', 'views/*/**', 'data/*/*'],
+          dest: 'dist/',
+          filter: 'isFile'
+        }]
       }
     }
   });
 
-  grunt.registerTask("default", ["babel"]);
+  grunt.registerTask("default", ["babel", "copy"]);
 }
