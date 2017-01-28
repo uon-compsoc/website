@@ -10,8 +10,8 @@ module.exports = function(grunt) {
             {
                 expand: true,
                 cwd: 'src/controllers/',
-                src: ['*.js'],
-                dest: 'dist/'
+                src: ['*/*.js'],
+                dest: 'dist/controllers/'
             }
         ]
       }
