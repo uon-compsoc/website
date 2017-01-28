@@ -86,59 +86,17 @@ body {
 }
 
 .btn-custom-standard {
-	color:white;
+	color:#202020;
 	padding: 10px;
-	background-color: #92b5e0;
-	border-color: #264065;
-	border-radius: 8px;
-	/*box-shadow: 0.1em 0.2em 0px #13132a;*/
-}
-.btn-custom-standard-b {
-	color:white;
-	padding: 10px;
-	border-color: #92b5e0;
-	background-color: #264065;
-	border-radius: 8px;
-	/*box-shadow: 0.1em 0.2em 0px #13132a;*/
-}
-.btn-custom-standard-c {
-	color:white;
-	padding: 10px;
-	border-color: #92b5e0;
-	background-color: #264065;
-	border-radius: 8px;
-	box-shadow: 0.1em 0.2em 0px #264065;
-}
-.btn-custom-standard-d {
-	color:white;
-	padding: 10px;
-	border-color: #92b5e0;
-	background-color: #264065;
+	background-color: #a1d4ff;
+	border-color: #91b4df;
 	border-radius: 10px;
 	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
-.btn-custom-standard-e {
-	color:#cecece;
-	padding: 10px;
-	background-color: #92b5e0;
-	border-color: #82a5d0;
-	border-radius: 10px;
-	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-}
-.btn-custom-standard-f {
-	color:#cecece;
-	padding: 10px;
-	border-color: #365075;
-	background-color: #264065;
-	border-radius: 10px;
-	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-}
-.btn-custom-standard-g {
-	padding: 10px;
-	border-color: #adb6c0;
-	background-color: #bdc6d0;
-	border-radius: 10px;
-	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+
+.btn-custom-standard:hover, .btn-custom-standard:active {
+	background-color: #91c4ef;
+	border-color: #81b4df;
 }
 /*
 colours from the logo:
