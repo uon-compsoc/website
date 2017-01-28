@@ -17,11 +17,15 @@ module.exports = function(grunt) {
       }
     },
     copy: {
+      options: {
+        encoding: null,
+        processContentExclude: ['**/*.{png,gif,jpg,ico,psd}']
+      },
       main: {
         files: [{
           expand: true,
           cwd: 'src/',
-          src: ['public/*/**', 'views/*/**', 'data/*/*'],
+          src: ['public/**', 'views/**', 'data/**'],
           dest: 'dist/',
           filter: 'isFile'
         }]
