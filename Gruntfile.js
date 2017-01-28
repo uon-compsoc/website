@@ -7,7 +7,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          "/dist/hello-world-testing/main.js": "/src/hello-world-testing/app.js",
+          "dist/hello-world-testing/main.js": "src/hello-world-testing/main.js",
         }
       }
     }
