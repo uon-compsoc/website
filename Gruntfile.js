@@ -6,15 +6,21 @@ module.exports = function(grunt) {
         sourceMap: true
       },
       dist: {
-        files: {
-          src: "src/controllers/**/*",
-          dest: "dist/"
-        }
+        files: [
+            {
+                expand: true,
+                cwd: 'src/controllers/',
+                src: ['*.js'],
+                dest: 'dist/'
+            }
+        ]
       }
     },
     copy: {
       files: {
-        src: "src/(public|views|data)/**/*",
+        expand: true,
+        cwd: 'src/',
+        src: "(public|views|data)/",
         dest: "dist/"
       }
     }
