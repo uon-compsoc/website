@@ -25,7 +25,7 @@ function setupPage(publicUrl, viewFile, component) {
 				compiledJson = compiledJson + ',"currentPage":' + JSON.stringify(navigationData.links[i]);
 			}
 		}
-		compiledJson = compiledJson + '};' + "angular.module('corePageApp').component('coreContext', " + JSON.stringify(component) + ")";
+		compiledJson = compiledJson + '};' + "angular.module('corePageApp').component('coreContent', " + JSON.stringify(component) + ")";
 
 
 		let outputData = viewFileContent.replace('{{BUNDLED_DATA_FOR_ANGULAR}}', compiledJson);
@@ -55,12 +55,10 @@ function setupPage(publicUrl, viewFile, component) {
 							fs.readFile(component.controller, 'utf-8',
 								function(err, data) {
 									if (err) {
-										console.log('Could not load dataFile: ' + component.template);
+										console.log('Could not load dataFile: ' + component.controller);
 										throw err;
 									} else {
-										component.template = data;
-
-
+										component.controller = data;
 										compileAndSendOutput();
 									}
 								}
