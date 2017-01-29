@@ -18,6 +18,8 @@
   "homepage": "https://github.com/uon-compsoc/website#readme",
   "dependencies": {
     "angular": "^1.6.1",
+    "angular-jwt": "^0.1.9",
+    "angular-lock": "^1.0.5",
     "express": "^4.14.0",
     "xmlhttprequest": "^1.8.0"
   },
