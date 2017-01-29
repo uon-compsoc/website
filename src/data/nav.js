@@ -1,5 +1,5 @@
-{
-	links: [
+module.exports = {
+	"links": [
 		{
 			"text": "Home",
 			"href": "/"

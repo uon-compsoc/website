@@ -1,113 +1,22 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="corePageApp">
-<head ng-controller="corePageController">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>{{page.name}} - UoN Computing Society</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="theme/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="theme/style.css" rel="stylesheet">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="theme/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <ng-list
-  </head>
-
-  <body>
-
-    <nav class="navbar navbar-fixed-top" id="header">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="#FAKEHOMELINK"><img id="logoImg" alt="UoN Computing Society Logo" src="compsoc_logo.png"/></a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse" ng-controller="navbarController">
-          <ul class="nav navbar-nav">
-            <li ng-repeat="link in primaryLinks" class="{{isActivePage ? 'active' : '' }}">
-              <a href="{{link.href}}">{{link.text}}</a>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
-    <div id="centralColumn">
-      <div class="container">
-        <h1>
-          Lorem Ipsum Dolor Sit
-        </h1>
-        Amet, consectetur adipiscing elit. Nullam egestas vehicula consequat. Ut vel efficitur metus, ut blandit felis. Aenean ultrices ac metus ac maximus. Nunc tempus accumsan auctor. Maecenas vitae maximus elit. Integer volutpat placerat diam, ut dictum justo sagittis sagittis. Aenean ac felis ante.
-        <br><br>
-        <button class="btn btn-custom-standard">Pereus Luid</button>
-        <br><br>
-        Proin at sollicitudin dui, ut ultricies lacus. In eu finibus ipsum. Nam suscipit, turpis ac aliquam eleifend, dolor purus laoreet orci, eget eleifend neque purus sed ante. Etiam aliquam nunc leo, in aliquet eros pharetra et. Sed varius sapien id sapien congue, vitae suscipit lorem elementum. Nam molestie, libero eget commodo fermentum, ex dolor blandit odio, quis vehicula ante nunc in eros. Nam tempus ex non laoreet condimentum. Morbi bibendum dolor dolor, non laoreet orci ullamcorper a. Nulla eget massa a nibh aliquet aliquam. Nunc posuere purus nisi, nec volutpat erat rutrum ut.
-        <br><br>
-        Donec vitae ultrices arcu, eu fringilla neque. Suspendisse est mauris, tempor quis hendrerit sit amet, viverra vel eros. Etiam erat lectus, tempor sed vehicula sit amet, posuere eget magna. Sed nec lacus in justo facilisis efficitur eget vel arcu. In vitae tellus nulla. Phasellus eu lorem iaculis, molestie elit nec, porta quam. Curabitur sit amet dui eros. Maecenas egestas nulla sed elit porta aliquam. Morbi a vehicula ex.
-        <br><br>
-        Morbi faucibus facilisis nisi, vitae interdum ipsum mattis ut. Nulla egestas lacinia finibus. Sed eget purus urna. Nulla vestibulum pretium fermentum. Phasellus facilisis interdum enim in congue. Integer eu metus rutrum, varius tellus non, egestas nisi. Curabitur a orci enim. Maecenas tortor risus, congue sed dignissim sed, malesuada quis nulla. Duis sed augue pretium, pharetra ligula efficitur, dignissim leo. Curabitur in facilisis lacus.   
-      </div>
-      <div class="container">
-          <h1>Donec Mattis Augue Arcu</h1>
-          Fermentum lacinia dui commodo vitae. Nam sed sem erat. Praesent sit amet pellentesque enim. Morbi feugiat urna ante, id facilisis mauris consequat vitae. Integer in est vel velit pellentesque sagittis ac mattis lorem. In molestie tristique scelerisque. Nam sollicitudin rhoncus elementum. Cras porttitor est at ante luctus interdum.
-          <br><br>
-          Proin facilisis efficitur nibh, eu auctor massa vehicula sit amet. Phasellus fringilla non dolor sit amet consequat. Mauris et libero ut orci molestie maximus quis eu elit. Sed auctor vitae augue molestie viverra. Praesent non neque vestibulum, porttitor urna sed, suscipit eros. Maecenas ut tristique tellus, sit amet efficitur diam. Suspendisse a nisi tincidunt metus lobortis finibus. Etiam vitae dui massa.
-          <br><br>
-          Etiam a nibh sit amet arcu cursus lobortis sit amet eget quam. Etiam vitae augue magna. Curabitur feugiat ipsum eu eros tincidunt imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In eleifend euismod nulla interdum tempus. Morbi a viverra felis, at suscipit ligula. Proin pharetra condimentum dolor, non malesuada ex. Nullam vehicula odio metus, vitae euismod odio viverra at. Donec aliquet quam luctus nisl aliquam fringilla. Mauris nec diam odio. Nullam luctus, enim sed dapibus volutpat, risus metus volutpat neque, et fermentum risus nibh vel erat. Nam eu velit et turpis convallis varius id sed leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur id aliquam velit, in viverra magna. Sed ut leo id risus tristique feugiat et sed turpis.    
-      </div>
-      <footer id="pageFooter">
-        <div class="container">
-          <span>
-            &copy; University of Newcastle Computing Society 2016
-            <br>
-            Licensed under <a href="#FAKELINK">MPL 2.0</a>
-          </span>
-          <span>
-            <a href="#FAKELINK">
-              Terms of Use
-            </a>
-          </span>
-          <span>
-            <a href="#FAKELINK">
-              Privacy Policy
-            </a>
-          </span>
-        </div>
-      </footer>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="index_files/jquery.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../bootstrap/js/bootstrap.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="theme/ie10-viewport-bug-workaround.js"></script>
-  
-
-</body></html>
+ <div class="container">
+  <h1>
+    Lorem Ipsum Dolor Sit
+  </h1>
+  Amet, consectetur adipiscing elit. Nullam egestas vehicula consequat. Ut vel efficitur metus, ut blandit felis. Aenean ultrices ac metus ac maximus. Nunc tempus accumsan auctor. Maecenas vitae maximus elit. Integer volutpat placerat diam, ut dictum justo sagittis sagittis. Aenean ac felis ante.
+  <br><br>
+  <button class="btn btn-custom-standard">Pereus Luid</button>
+  <br><br>
+  Proin at sollicitudin dui, ut ultricies lacus. In eu finibus ipsum. Nam suscipit, turpis ac aliquam eleifend, dolor purus laoreet orci, eget eleifend neque purus sed ante. Etiam aliquam nunc leo, in aliquet eros pharetra et. Sed varius sapien id sapien congue, vitae suscipit lorem elementum. Nam molestie, libero eget commodo fermentum, ex dolor blandit odio, quis vehicula ante nunc in eros. Nam tempus ex non laoreet condimentum. Morbi bibendum dolor dolor, non laoreet orci ullamcorper a. Nulla eget massa a nibh aliquet aliquam. Nunc posuere purus nisi, nec volutpat erat rutrum ut.
+  <br><br>
+  Donec vitae ultrices arcu, eu fringilla neque. Suspendisse est mauris, tempor quis hendrerit sit amet, viverra vel eros. Etiam erat lectus, tempor sed vehicula sit amet, posuere eget magna. Sed nec lacus in justo facilisis efficitur eget vel arcu. In vitae tellus nulla. Phasellus eu lorem iaculis, molestie elit nec, porta quam. Curabitur sit amet dui eros. Maecenas egestas nulla sed elit porta aliquam. Morbi a vehicula ex.
+  <br><br>
+  Morbi faucibus facilisis nisi, vitae interdum ipsum mattis ut. Nulla egestas lacinia finibus. Sed eget purus urna. Nulla vestibulum pretium fermentum. Phasellus facilisis interdum enim in congue. Integer eu metus rutrum, varius tellus non, egestas nisi. Curabitur a orci enim. Maecenas tortor risus, congue sed dignissim sed, malesuada quis nulla. Duis sed augue pretium, pharetra ligula efficitur, dignissim leo. Curabitur in facilisis lacus.   
+</div>
+<div class="container">
+    <h1>Donec Mattis Augue Arcu</h1>
+    Fermentum lacinia dui commodo vitae. Nam sed sem erat. Praesent sit amet pellentesque enim. Morbi feugiat urna ante, id facilisis mauris consequat vitae. Integer in est vel velit pellentesque sagittis ac mattis lorem. In molestie tristique scelerisque. Nam sollicitudin rhoncus elementum. Cras porttitor est at ante luctus interdum.
+    <br><br>
+    Proin facilisis efficitur nibh, eu auctor massa vehicula sit amet. Phasellus fringilla non dolor sit amet consequat. Mauris et libero ut orci molestie maximus quis eu elit. Sed auctor vitae augue molestie viverra. Praesent non neque vestibulum, porttitor urna sed, suscipit eros. Maecenas ut tristique tellus, sit amet efficitur diam. Suspendisse a nisi tincidunt metus lobortis finibus. Etiam vitae dui massa.
+    <br><br>
+    Etiam a nibh sit amet arcu cursus lobortis sit amet eget quam. Etiam vitae augue magna. Curabitur feugiat ipsum eu eros tincidunt imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In eleifend euismod nulla interdum tempus. Morbi a viverra felis, at suscipit ligula. Proin pharetra condimentum dolor, non malesuada ex. Nullam vehicula odio metus, vitae euismod odio viverra at. Donec aliquet quam luctus nisl aliquam fringilla. Mauris nec diam odio. Nullam luctus, enim sed dapibus volutpat, risus metus volutpat neque, et fermentum risus nibh vel erat. Nam eu velit et turpis convallis varius id sed leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur id aliquam velit, in viverra magna. Sed ut leo id risus tristique feugiat et sed turpis.    
+</div>
