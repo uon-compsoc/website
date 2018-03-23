@@ -1,1 +1,0 @@
-var corePageApp = angular.module('corePageApp', []);
